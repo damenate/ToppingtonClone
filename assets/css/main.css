@@ -1622,9 +1622,7 @@
 
 	}
 
-	body {
-		background-color: #0B253D; 
-	}
+
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
@@ -1640,7 +1638,7 @@
 /* Type */
 
 	body {
-		background-color: #0b253d;
+		background-color: #2a2c35;
 		color: #ffffff;
 	}
 
@@ -1682,7 +1680,7 @@
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
 		border-bottom: dotted 1px;
-		color: #000000;
+		color: #ec2059;
 	}
 
 		a:hover {
@@ -1839,7 +1837,7 @@
 	}
 
 	h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #f4f4f7;
 	}
 
 	blockquote {
