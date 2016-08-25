@@ -1724,8 +1724,10 @@
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 40px;
 		line-height: 1.2;
+		font-family:  'Proxima Nova Condensed';
+
 	}
 
 	h2 {
@@ -1833,7 +1835,7 @@
 	}
 
 	h1 {
-		color: #ffffff;
+		color: #fff;
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -2706,7 +2708,7 @@
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 5em;
 			}
 
 			#header.alt > * {
