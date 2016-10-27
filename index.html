@@ -22,15 +22,16 @@
      // If you load your user info asynchronously, set this to true
      usePendoAgentAPI: false,
     visitor: {
-      id:window.prompt("enter visitor ID", "Your ID")//Math.round(Math.random()*10)  // Required if user is logged in
-      // email:        // Optional
+      id:window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
+      moveField:"string"
+	    // email:        // Optional
       
       // You can add any additional visitor level key-values here,
       // as long as it's not one of the above reserved names.
     },
     account: {
       // id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
-      // name:         // Optional
+      moveField:"string"
       // planLevel:    // Optional
       // planPrice:    // Optional
       // creationDate: // Optional
