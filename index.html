@@ -16,6 +16,8 @@
 
 
 <script>
+	
+var screenSize = screen.width + "x" + screen.height;
 
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
   v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -31,7 +33,8 @@
 	 excludeAllText:true,
     visitor: {
       id:window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
-      //moveField:"string"
+      screen:screenSize;
+	    //moveField:"string"
 	    // email:        // Optional
       
       // You can add any additional visitor level key-values here,
