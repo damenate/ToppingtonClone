@@ -14,7 +14,49 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
+<script type="text/javascript">
+function loadPendoOnWindowLoad() {
+window.pendo_options = {
+apiKey: '77500457-1832-4463-4a11-08d199720142',
 
+usePendoAgentAPI: false,
+
+visitor: {
+id: '352574',
+email: 'John@ChangingTheGameProject.com',
+firstName: 'John',
+lastName: 'O'Sullivan',
+userType: 'admin',
+isPartner: 'false'
+},
+
+account: {
+id: 'eh185',
+block: 'mn140.web',
+appVersion: '1.60.0.57'
+}
+};
+
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.async = true;
+script.src = '//d3accju1t3mngt.cloudfront.net/js/pa.min.js';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+}
+
+if (window.addEventListener) {
+window.addEventListener("load", loadPendoOnWindowLoad, false);
+
+} else if (window.attachEvent) {
+window.attachEvent("onload", loadPendoOnWindowLoad);
+
+} else {
+window.onload = loadPendoOnWindowLoad;
+}
+</script>
+		
+<!--		
 <script>
 	
 var screenSize = screen.width + "x" + screen.height;
@@ -68,7 +110,7 @@ var w = window,
     }
   });
  </script>
-
+-->
 	</head>
 	<body>
 
