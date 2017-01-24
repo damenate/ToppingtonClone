@@ -15,25 +15,6 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 		
-
-
-		
-
-	</head>
-	<body>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src="images/logo.png" alt="" /></span> -->
-						<h1>ACME Corp.</h1>
-						
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
 						<script>
 	
 var screenSize = screen.width + "x" + screen.height;
@@ -62,7 +43,8 @@ var w = window,
     visitor: {
       id:window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
       screen:screenSize,
-	    browser:brwsr
+	    browser:brwsr,
+	    firstName:'name'
 	    //moveField:"string"
 	    // email:        // Optional
       
@@ -88,6 +70,25 @@ var w = window,
     }
   });
  </script>
+
+		
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <span class="logo"><img src="images/logo.png" alt="" /></span> -->
+						<h1>ACME Corp.</h1>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
 						<ul>
 							<li><a href="#intro" class="active">Welcome</a></li>
 							<li><a href="#first">Integrations</a></li>
