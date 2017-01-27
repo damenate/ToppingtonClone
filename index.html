@@ -30,19 +30,20 @@ var w = window,
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
   v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
   o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-  y=e.createElement(n);y.async=!0;y.src='https://pendo-test-static.storage.googleapis.com/agent/static/e9730760-7218-4a18-671b-d9d0187339fd/pendo.js';
+  y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/77500457-1832-4463-4a11-08d199720142/pendo.js';
   z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
 
   // Call this whenever information about your visitors becomes available
   // Please use Strings, Numbers, or Bools for value types.
   pendo.initialize({
-    apiKey: 'e9730760-7218-4a18-671b-d9d0187339fd',
-//adam's test sub on pendo-test
+    apiKey: '77500457-1832-4463-4a11-08d199720142',
+
 	  
     visitor: {
       id:window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
-      agent1:screenSize,
-	    agent2:brwsr,
+      screen:screenSize,
+	    browser:brwsr,
 	    firstName:'name'
 	    //moveField:"string"
 	    // email:        // Optional
