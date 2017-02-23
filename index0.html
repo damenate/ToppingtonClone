@@ -16,23 +16,11 @@
 
 
 						<script>
-
-var screenSize = screen.width + "x" + screen.height;
-
-var w = window,
-        d = document,
-        e = d.documentElement,
-        g = d.getElementsByTagName('body')[0],
-        x = w.innerWidth || e.clientWidth || g.clientWidth,
-        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    var brwsr = x + ' × ' + y;
-
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
   v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
   o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-  y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/19cbefd5-2b40-49f3-7405-dcebb24b828b/pendo.js';
+  y=e.createElement(n);y.async=!0;y.src='https://pendo-test-static.storage.googleapis.com/agent/static/19cbefd5-2b40-49f3-7405-dcebb24b828b/pendo.js';
   z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
 
   // Call this whenever information about your visitors becomes available
   // Please use Strings, Numbers, or Bools for value types.
@@ -40,11 +28,10 @@ var w = window,
     apiKey: '19cbefd5-2b40-49f3-7405-dcebb24b828b',
 
 
+
     visitor: {
       id:window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
-      screen:screenSize,
-	    browser:brwsr,
-	    firstName:'name'
+
 	    //moveField:"string"
 	    // email:        // Optional
 
@@ -60,13 +47,6 @@ var w = window,
       // creationDate: // Optional
       // You can add any additional account level key-values here,
       // as long as it's not one of the above reserved names.
-    },
-
-    parentAccount: {
-      id:           100
-      // name:         // Optional
-      // You can add any additional master account level
-      // key-values here.
     }
   });
  </script>
