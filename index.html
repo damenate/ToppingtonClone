@@ -31,6 +31,7 @@ var randomVisitor = Math.floor(Math.random() * 999999999);
 var carsAtHome = ["Volkswagon", "Ford", "Nissan"];
 var userPermissionsLevel = 'Admin';
 var newDateClass = new Date();
+var accountIdPlaceholder = newDateClass.getDay();
 //var carsWithModel = [Volkswagon:"Golf", Ford:"Taurus", Nissan:"Ultima"];
 
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
@@ -67,7 +68,7 @@ var newDateClass = new Date();
       // as long as it's not one of the above reserved names.
     },
     account: {
-      id: newDateClass.getDay();  // Highly recommended
+      id: accountIdPlaceholder  // Highly recommended
       //moveField:"string",
       //accountfield:"string"
       // planLevel:    // Optional
