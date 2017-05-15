@@ -28,6 +28,9 @@ var w = window,
     var brwsr = x + ' × ' + y;
 
 var randomVisitor = Math.floor(Math.random() * 999999999);
+var carsAtHome = ["Volkswagon", "Ford", "Nissan"];
+var userPermissionsLevel = 'Admin';
+//var carsWithModel = [Volkswagon:"Golf", Ford:"Taurus", Nissan:"Ultima"];
 
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
   v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -45,11 +48,17 @@ var randomVisitor = Math.floor(Math.random() * 999999999);
 
     visitor: {
       id: randomVisitor,
-			//
 			//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
       screen:screenSize,
 	    browser:brwsr,
-	    firstName:'name'
+	    firstName: 'Spencer',
+			lastName: 'Harwood',
+			title: null,
+			carModels: carsAtHome,
+			numberOfCars: 3,
+			permissionsLevel = userPermissionsLevel;
+			//array: carsWithModel
+
 	    //moveField:"string"
 	    // email:        // Optional
 
