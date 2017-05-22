@@ -58,6 +58,17 @@ function Init() {
 		},
 		parentAccount: {
 			//parentAccount fields go here if necessary
+		},
+		events: {
+			ready: {
+				console.log('pendo is ready!');
+			},
+			guidesLoaded: {
+				console.log('Your pendo guides have loaded.');
+			},
+			guidesFailed: {
+				console.log('Your pendo guides have timed out.');
+			}
 		}
 	};
 	return pendoVariableInitialization;
