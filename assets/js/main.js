@@ -16,7 +16,7 @@ function Init() {
 	    var brwsr = x + ' × ' + y;
 
 
-	var randomVisitor = Math.floor(Math.random() * 999999999) + 1;
+	var randomVisitor = Math.floor(Math.random() * 1000) + 1;
 
 	var carsOptions = ["Volkswagon", "Ford", "Nissan", "Tesla", "Volvo", "Chevrolet", "Mercedes", "BMW", "Audi", "Honda"];
 	var titleOptions = ["Mr. Manager", "Team Lead", "Admin", "Foreman", "Associate", "Senior", "Junior", "Product Manager", "Customer Succcess", "Janitor"];
@@ -50,10 +50,11 @@ function Init() {
 			title: titleOptions[optionsSelector],
 			carModels: carsOptions[optionsSelector],
 			numberOfCars: 1,
+			//randomTestField: "'forcing quotes''/'\''",
 			permissionsLevel: permLevelSet(optionsSelector)
 		},
 		account: {
-			id: accountString + ""
+			id: accountString
 		},
 		parentAccount: {
 			//parentAccount fields go here if necessary
