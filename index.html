@@ -14,11 +14,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-
-						<script>
+<script>
 
 var screenSize = screen.width + "x" + screen.height;
-
 var w = window,
         d = document,
         e = d.documentElement,
@@ -32,21 +30,19 @@ var carsAtHome = ["Volkswagon", "Ford", "Nissan"];
 var userPermissionsLevel = 'Admin';
 var newDateClass = new Date();
 var accountIdPlaceholder = newDateClass.getDay();
+
 //var carsWithModel = [Volkswagon:"Golf", Ford:"Taurus", Nissan:"Ultima"];
 
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
   v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
   o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
   y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
   z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
-
-
   // Call this whenever information about your visitors becomes available
   // Please use Strings, Numbers, or Bools for value types.
   pendo.initialize({
     apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
-
 
     visitor: {
       id: randomVisitor,
@@ -86,8 +82,6 @@ var accountIdPlaceholder = newDateClass.getDay();
     }
   });
  </script>
-
-
 
 	</head>
 	<body>
