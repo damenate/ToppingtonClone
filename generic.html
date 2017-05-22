@@ -13,40 +13,20 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		
-<script>
-
-  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-  v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
-  o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-  y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/77500457-1832-4463-4a11-08d199720142/pendo.js';
-  z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
-  // Call this whenever information about your visitors becomes available
-  // Please use Strings, Numbers, or Bools for value types.
-  pendo.initialize({
-    apiKey: '77500457-1832-4463-4a11-08d199720142',
-	  
-    visitor: {
-      id:1,//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
-      moveField:"string"
-	    // email:        // Optional
-      
-      // You can add any additional visitor level key-values here,
-      // as long as it's not one of the above reserved names.
-    },
-    account: {
-      id:1,  // Highly recommended
-      moveField:"string",
-      accountfield:"string"
-      // planLevel:    // Optional
-      // planPrice:    // Optional
-      // creationDate: // Optional
-      // You can add any additional account level key-values here,
-      // as long as it's not one of the above reserved names.
-    }
-  });
- </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src ="assets/js/skel.min.js" type="text/javascript"></script>
+		<script src ="assets/js/util.js" type="text/javascript"></script>
+		<script src ="assets/js/jquery.scrollex.min.js" type="text/javascript"></script>
+		<script src ="assets/js/jquery.scrolly.min.js" type="text/javascript"></script>
+		<script src ="assets/js/main.js" type="text/javascript"></script>
+		<script>
+			(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+			v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+			o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+			y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
+			z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+			pendo.initialize(Init());
+		</script>
 	</head>
 	<body>
 
@@ -66,14 +46,14 @@
 							<section id="content" class="main">
 								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
 
-								
+
 
 								<h2>Magna feugiat lorem</h2>
 								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
 								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
 								<h2>Tempus veroeros</h2>
 								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
-								<a href='averysullivan.github.io' onclick="pendo.showGuideByName('HREF')">Href and Guide Activation</a>
+								<a href="toppington.github.io" onclick="pendo.showGuideByName('HREF')">Href and Guide Activation</a>
 							</section>
 
 					</div>

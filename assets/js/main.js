@@ -4,6 +4,65 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function Init() {
+
+	var screenSize = screen.width + "x" + screen.height;
+	var w = window,
+	        d = document,
+	        e = d.documentElement,
+	        g = d.getElementsByTagName('body')[0],
+	        x = w.innerWidth || e.clientWidth || g.clientWidth,
+	        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+	    var brwsr = x + ' × ' + y;
+
+
+	var randomVisitor = Math.floor(Math.random() * 999999999) + 1;
+
+	var carsOptions = ["Volkswagon", "Ford", "Nissan", "Tesla", "Volvo", "Chevrolet", "Mercedes", "BMW", "Audi", "Honda"];
+	var titleOptions = ["Mr. Manager", "Team Lead", "Admin", "Foreman", "Associate", "Senior", "Junior", "Product Manager", "Customer Succcess", "Janitor"];
+	var firstNameOptions = ["Matt", "Adam", "Rick", "Sawyer", "Spencer", "Chantelle", "Avery", "Beth", "Erika", "Erin"];
+	var lastNameOptions = ["Kerbawy", "Chasen", "Kedlac", "Jinkins", "Harwood", "Becker", "Welp", "Sullivan", "Greenberg", "Shlotzky"];
+	var optionsSelector = Math.floor(Math.random() * 10);
+
+	function permLevelSet(x) {
+		if (x % 2 === 0) {
+			return "Admin";
+		}
+		else {
+			return "Non-Admin";
+		}
+	}
+
+	var newDateClass = new Date();
+	var accountIdPlaceholder = newDateClass.getDay();
+	var accountString = accountIdPlaceholder.toString() + "//" + (randomVisitor % 5).toString()
+
+	var pendoVariableInitialization =
+	{
+		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
+		visitor: {
+			id: randomVisitor,
+			//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
+			screen:screenSize,
+			browser:brwsr,
+			firstName: firstNameOptions[optionsSelector],
+			lastName: lastNameOptions[optionsSelector],
+			title: titleOptions[optionsSelector],
+			carModels: carsOptions[optionsSelector],
+			numberOfCars: 1,
+			permissionsLevel: permLevelSet(optionsSelector)
+		},
+		account: {
+			id: accountString + ""
+		},
+		parentAccount: {
+			//parentAccount fields go here if necessary
+		}
+	};
+	return pendoVariableInitialization;
+}
+
+
 (function($) {
 
 	skel.breakpoints({

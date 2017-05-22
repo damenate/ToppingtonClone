@@ -13,75 +13,20 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
-<script>
-
-var screenSize = screen.width + "x" + screen.height;
-var w = window,
-        d = document,
-        e = d.documentElement,
-        g = d.getElementsByTagName('body')[0],
-        x = w.innerWidth || e.clientWidth || g.clientWidth,
-        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    var brwsr = x + ' × ' + y;
-
-var randomVisitor = Math.floor(Math.random() * 999999999);
-var carsAtHome = ["Volkswagon", "Ford", "Nissan"];
-var userPermissionsLevel = 'Admin';
-var newDateClass = new Date();
-var accountIdPlaceholder = newDateClass.getDay();
-
-//var carsWithModel = [Volkswagon:"Golf", Ford:"Taurus", Nissan:"Ultima"];
-
-  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-  v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
-  o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-  y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
-  z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
-  // Call this whenever information about your visitors becomes available
-  // Please use Strings, Numbers, or Bools for value types.
-  pendo.initialize({
-    apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
-
-    visitor: {
-      id: randomVisitor,
-			//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
-      screen:screenSize,
-	    browser:brwsr,
-	    firstName: 'Spencer',
-			lastName: 'Harwood',
-			title: null,
-			carModels: carsAtHome,
-			numberOfCars: 3,
-			permissionsLevel: userPermissionsLevel
-			//array: carsWithModel
-
-	    //moveField:"string"
-	    // email:        // Optional
-
-      // You can add any additional visitor level key-values here,
-      // as long as it's not one of the above reserved names.
-    },
-    account: {
-      id: accountIdPlaceholder  // Highly recommended
-      //moveField:"string",
-      //accountfield:"string"
-      // planLevel:    // Optional
-      // planPrice:    // Optional
-      // creationDate: // Optional
-      // You can add any additional account level key-values here,
-      // as long as it's not one of the above reserved names.
-    },
-
-    parentAccount: {
-      //id:null
-      // name:         // Optional
-      // You can add any additional master account level
-      // key-values here.
-    }
-  });
- </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src ="assets/js/skel.min.js" type="text/javascript"></script>
+		<script src ="assets/js/util.js" type="text/javascript"></script>
+		<script src ="assets/js/jquery.scrollex.min.js" type="text/javascript"></script>
+		<script src ="assets/js/jquery.scrolly.min.js" type="text/javascript"></script>
+		<script src ="assets/js/main.js" type="text/javascript"></script>
+		<script>
+			(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+			v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+			o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+			y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
+			z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+			pendo.initialize(Init());
+		</script>
 
 	</head>
 	<body>
@@ -103,7 +48,7 @@ var accountIdPlaceholder = newDateClass.getDay();
 							<li><a href="#intro" class="active">Welcome</a></li>
 							<li><a href="#first">Integrations</a></li>
 							<li><a href="#second">Solutions</a></li>
-							<li><a id="getStarted" href="https://averysullivan.github.io/generic.html">New Feature</a></li>
+							<li><a id="getStarted" href="https://toppington.github.io/generic.html">New Feature</a></li>
 						</ul>
 					</nav>
 
@@ -115,11 +60,11 @@ var accountIdPlaceholder = newDateClass.getDay();
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Welcome</h2>
+											<h2>Welcome to Spencer's Website Sandbox!</h2>
 										</header>
-										<p>This is a test application.</p>
+										<p>This site is a sandbox for developing HTML/CSS/JS applications and integrations.</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Let's Go!</a></li>
+											<li><a href="generic.html" class="button">Generic Page</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /> </span>
@@ -239,15 +184,5 @@ var accountIdPlaceholder = newDateClass.getDay();
 					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
