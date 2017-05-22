@@ -57,17 +57,17 @@ function Init() {
 			id: accountString
 		},
 		parentAccount: {
-			//parentAccount fields go here if necessary
+			id: null
 		},
 		events: {
-			ready: {
-				console.log('pendo is ready!');
+			ready: function printStuffReady() {
+				console.log("pendo is ready!");
 			},
-			guidesLoaded: {
-				console.log('Your pendo guides have loaded.');
+			guidesLoaded: function printStuffLoaded()  {
+				console.log("Your pendo guides have loaded.");
 			},
-			guidesFailed: {
-				console.log('Your pendo guides have timed out.');
+			guidesFailed: function printStuffFailed() {
+				console.log("Your pendo guides have timed out.");
 			}
 		}
 	};
