@@ -39,7 +39,7 @@ function Init() {
 
 	var pendoVariableInitialization =
 	{
-		apiKey: 'b9671e7c-a1d3-42ce-5465-d1ffbe07ba2f',
+		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
 			id: randomVisitor,
 			//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
