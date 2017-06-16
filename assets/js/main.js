@@ -39,7 +39,7 @@ function Init() {
 
 	var pendoVariableInitialization =
 	{
-		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
+		apiKey: 'b9671e7c-a1d3-42ce-5465-d1ffbe07ba2f',
 		visitor: {
 			id: randomVisitor,
 			//window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
@@ -74,6 +74,13 @@ function Init() {
 	return pendoVariableInitialization;
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var collection = $('#main > .special > .major:nth-child(1):first');
+	collection[0].addEventListener('click', function () {
+							pendo.onGuideDismissed();
+							pendo.showGuideById('NvNtOtI0jaQpq9d7T2A4BxiZ9pg');
+					});
+				});
 
 (function($) {
 
