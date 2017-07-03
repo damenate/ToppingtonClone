@@ -54,7 +54,9 @@ function Init() {
 			permissionsLevel: permLevelSet(optionsSelector)
 		},
 		account: {
-			id: accountString
+			id: accountString,
+			immuteString: "unchanging"
+
 		},
 		parentAccount: {
 			id: null
