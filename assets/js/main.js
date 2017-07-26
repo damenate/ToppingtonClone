@@ -21,7 +21,7 @@ function Init() {
 	var carsOptions = ["Volkswagon", "Ford", "Nissan", "Tesla", "Volvo", "Chevrolet", "Mercedes", "BMW", "Audi", "Honda"];
 	var titleOptions = ["Mr. Manager", "Team Lead", "Admin", "Foreman", "Associate", "Senior", "Junior", "Product Manager", "Customer Succcess", "Janitor"];
 	var firstNameOptions = ["Matt", "Adam", "Rick", "Sawyer", "Spencer", "Chantelle", "Avery", "Beth", "Erika", "Erin"];
-	var lastNameOptions = [https://pendo.zoom.us/w/332552863?tk=JFv0mU4soLORBlpAlnoF7e96xETpUpra4XgsX6UDWjg.DQEAAAAAE9JanxZ2NTlMZWhHa1REZWFaXzNRUWtsdktnAAc"Kerbawy", "Chasen", "Kedlac", "Jinkins", "Harwood", "Becker", "Welp", "Sullivan", "Greenberg", "Shlotzky"];
+	var lastNameOptions = ["Kerbawy", "Chasen", "Kedlac", "Jinkins", "Harwood", "Becker", "Welp", "Sullivan", "Greenberg", "Shlotzky"];
 	var optionsSelector = Math.floor(Math.random() * 10);
 
 	function permLevelSet(x) {
@@ -41,8 +41,8 @@ function Init() {
 	{
 		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
-			id: randomVisitor,
-			//id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
+			//id: randomVisitor,
+			id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
