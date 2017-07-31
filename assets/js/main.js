@@ -55,7 +55,7 @@ function Init() {
 		},
 		account: {
 			id: "Test Account ID",//accountString,
-			accountName: window.prompt("enter account name", "Account Name"),
+			//accountName: window.prompt("enter account name", "Account Name"),
 			immuteString: "unchanging"
 
 		},
