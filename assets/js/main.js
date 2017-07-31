@@ -54,7 +54,7 @@ function Init() {
 			permissionsLevel: permLevelSet(optionsSelector)
 		},
 		account: {
-			id: accountString,
+			id: "Test Account ID",//accountString,
 			accountName: window.prompt("enter account name", "Account Name"),
 			immuteString: "unchanging"
 
