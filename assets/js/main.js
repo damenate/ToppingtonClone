@@ -23,6 +23,9 @@ function Init() {
 	var firstNameOptions = ["Matt", "Adam", "Rick", "Sawyer", "Spencer", "Chantelle", "Avery", "Beth", "Erika", "Erin"];
 	var lastNameOptions = ["Kerbawy", "Chasen", "Kedlac", "Jinkins", "Harwood", "Becker", "Welp", "Sullivan", "Greenberg", "Shlotzky"];
 	var optionsSelector = Math.floor(Math.random() * 10);
+	var optionsSelector2 = Math.floor(Math.random() * 10);
+	var optionsSelector3 = Math.floor(Math.random() * 10);
+	var optionsSelector4 = Math.floor(Math.random() * 10);
 
 	function permLevelSet(x) {
 		if (x % 2 === 0) {
@@ -41,14 +44,14 @@ function Init() {
 	{
 		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
-			id: randomVisitor,
-			//id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
+			//id: randomVisitor,
+			id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
-			lastName: lastNameOptions[optionsSelector],
-			title: titleOptions[optionsSelector],
-			carModels: carsOptions[optionsSelector],
+			lastName: lastNameOptions[optionsSelector2],
+			title: titleOptions[optionsSelector3],
+			carModels: carsOptions[optionsSelector4],
 			numberOfCars: 1,
 			//randomTestField: "'forcing quotes''/'\''",
 			permissionsLevel: permLevelSet(optionsSelector)
