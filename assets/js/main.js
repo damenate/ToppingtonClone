@@ -38,14 +38,14 @@ function Init() {
 
 	var newDateClass = new Date();
 	var accountIdPlaceholder = newDateClass.getDay();
-	var accountString = accountIdPlaceholder.toString() + "//" + (randomVisitor % 5).toString()
+	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString()
 
 	var pendoVariableInitialization =
 	{
 		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
-			//id: randomVisitor,
-			id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
+			id: randomVisitor,
+			//id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
