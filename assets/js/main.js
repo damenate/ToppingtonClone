@@ -44,8 +44,8 @@ function Init() {
 	{
 		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
-			id: 'BMC_TEST',
-			//randomVisitor,
+			//id: 'BMC_TEST',
+			id: randomVisitor,
 			//id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
 			screen:screenSize,
 			browser:brwsr,
