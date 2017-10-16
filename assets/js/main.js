@@ -38,8 +38,8 @@ function Init() {
 
 	var date = new Date('Sun Nov 12 2019 17:47:47 GMT-0500 (EST)');
 	date = date.toString();
-	var accountIdPlaceholder = date.getDay();
-	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString()
+	var accountIdPlaceholder = date.prototype.getDay();
+	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString();
 
 	var pendoVariableInitialization =
 	{
