@@ -36,13 +36,12 @@ function Init() {
 		}
 	}
 
-	var newDateClass = new Date();
-	var accountIdPlaceholder = newDateClass.getDay();
+	var date = new Date('Sun Nov 12 2019 17:47:47 GMT-0500 (EST)');
+	var accountIdPlaceholder = date.getDay();
 	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString()
 
 	var pendoVariableInitialization =
 	{
-		apiKey: '2c315d28-6313-4a76-6ec4-b5bd95418e98',
 		visitor: {
 			//id: 'BMC_TEST',
 			id: randomVisitor,
@@ -55,7 +54,8 @@ function Init() {
 			carModels: carsOptions[optionsSelector4],
 			numberOfCars: 1,
 			//randomTestField: "'forcing quotes''/'\''",
-			permissionsLevel: permLevelSet(optionsSelector)
+			permissionsLevel: permLevelSet(optionsSelector),
+			trialEndDate: date
 		},
 		account: {
 			id: accountString,//"Test Account ID",
