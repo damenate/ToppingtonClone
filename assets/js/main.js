@@ -55,7 +55,7 @@ function Init() {
 			numberOfCars: 1,
 			//randomTestField: "'forcing quotes''/'\''",
 			permissionsLevel: permLevelSet(optionsSelector),
-			trialEndDate: date
+			trialEndDate: date.toString();
 		},
 		account: {
 			id: accountString,//"Test Account ID",
