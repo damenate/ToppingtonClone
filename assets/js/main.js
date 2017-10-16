@@ -37,6 +37,7 @@ function Init() {
 	}
 
 	var date = new Date('Sun Nov 12 2019 17:47:47 GMT-0500 (EST)');
+	date = date.toString();
 	var accountIdPlaceholder = date.getDay();
 	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString()
 
@@ -55,7 +56,7 @@ function Init() {
 			numberOfCars: 1,
 			//randomTestField: "'forcing quotes''/'\''",
 			permissionsLevel: permLevelSet(optionsSelector),
-			trialEndDate: date.toString();
+			trialEndDate: date
 		},
 		account: {
 			id: accountString,//"Test Account ID",
