@@ -8,6 +8,16 @@ function Init(useParents) {
 
 	var parentId = parentId(useParents);
 
+	function parentId(useParents) {
+
+			if(typeof useParents != 'undefined' && useParents === true) {
+				return "PA_" + Math.floor(Math.random() * 1000) + 1;
+			}
+			else {
+				return null;
+			}
+	}
+
 	var screenSize = screen.width + "x" + screen.height;
 	var w = window,
 	        d = document,
@@ -82,16 +92,6 @@ function Init(useParents) {
 		}
 	};
 	return pendoVariableInitialization;
-}
-
-function parentId(useParents) {
-
-		if(typeof useParents != 'undefined' && useParents === true) {
-			return "PA_" + Math.floor(Math.random() * 1000) + 1;
-		}
-		else {
-			return null;
-		}
 }
 
 document.addEventListener('DOMContentLoaded', function () {
