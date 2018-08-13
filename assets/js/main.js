@@ -67,7 +67,7 @@ function Init(useParents) {
 
 		},
 		parentAccount: {
-			id: parentId(useParents);
+			id: parentId
 		},
 		events: {
 			ready: function printStuffReady() {
