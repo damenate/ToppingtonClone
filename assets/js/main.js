@@ -46,23 +46,21 @@ function Init(useParents) {
 	var date = new Date('Sun Nov 12 2019 17:47:47 GMT-0500 (EST)');
 	var accountIdPlaceholder = date.getDay();
 	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString();
+	var appId = new Date().getMilliseconds() % 5;
 	date = date.toString();
 
 	var pendoVariableInitialization =
 	{
 		visitor: {
-			//id: 'BMC_TEST',
 			id: randomVisitor,
-			//id: window.prompt("enter visitor ID", "Your ID"),//Math.round(Math.random()*10)  // Required if user is logged in
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
 			lastName: lastNameOptions[optionsSelector2],
 			title: titleOptions[optionsSelector3],
 			carModels: carsOptions[optionsSelector4],
-			numberOfCars: 1,
-			//randomTestField: "'forcing quotes''/'\''",
 			permissionsLevel: permLevelSet(optionsSelector),
+			currentApp: "APP_ID_0" + appId,
 			trialEndDate: date
 		},
 		account: {
