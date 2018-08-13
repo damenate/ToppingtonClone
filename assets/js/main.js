@@ -4,7 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-function Init() {
+function Init(useParents) {
+
+	var parentId = function(useParents) {
+			if(useParents) {
+				return "PA_" + Math.floor(Math.random() * 1000) + 1;
+			}
+			else {
+				return null;
+			}
+	}
 
 	var screenSize = screen.width + "x" + screen.height;
 	var w = window,
@@ -65,7 +74,7 @@ function Init() {
 
 		},
 		parentAccount: {
-			id: null
+			id: parentId
 		},
 		events: {
 			ready: function printStuffReady() {
