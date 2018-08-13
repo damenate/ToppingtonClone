@@ -7,6 +7,11 @@
 function Init(useParents) {
 
 	var parentId = function(useParents) {
+
+			if(typeof useParents == 'undefined') {
+				useParents = false;
+			}
+
 			if(useParents) {
 				return "PA_" + Math.floor(Math.random() * 1000) + 1;
 			}
@@ -74,7 +79,7 @@ function Init(useParents) {
 
 		},
 		parentAccount: {
-			id: parentId
+			id: parentId(useParents);
 		},
 		events: {
 			ready: function printStuffReady() {
