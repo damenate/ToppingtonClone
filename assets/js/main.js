@@ -6,8 +6,6 @@
 
 function Init(useParents) {
 
-	var parentId = parentId(useParents);
-
 	function parentId(useParents) {
 
 			if(typeof useParents != 'undefined' && useParents === true) {
@@ -16,6 +14,15 @@ function Init(useParents) {
 			else {
 				return null;
 			}
+	}
+
+	function permLevelSet(x) {
+		if (x % 2 === 0) {
+			return "Admin";
+		}
+		else {
+			return "Non-Admin";
+		}
 	}
 
 	var screenSize = screen.width + "x" + screen.height;
@@ -27,9 +34,7 @@ function Init(useParents) {
 	        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 	    var brwsr = x + ' × ' + y;
 
-
 	var randomVisitor = Math.floor(Math.random() * 1000) + 1;
-
 	var carsOptions = ["Volkswagon", "Ford", "Nissan", "Tesla", "Volvo", "Chevrolet", "Mercedes", "BMW", "Audi", "Honda"];
 	var titleOptions = ["Mr. Manager", "Team Lead", "Admin", "Foreman", "Associate", "Senior", "Junior", "Product Manager", "Customer Succcess", "Janitor"];
 	var firstNameOptions = ["Matt", "Adam", "Rick", "Sawyer", "Spencer", "Chantelle", "Avery", "Beth", "Erika", "Erin"];
@@ -38,16 +43,6 @@ function Init(useParents) {
 	var optionsSelector2 = Math.floor(Math.random() * 10);
 	var optionsSelector3 = Math.floor(Math.random() * 10);
 	var optionsSelector4 = Math.floor(Math.random() * 10);
-
-	function permLevelSet(x) {
-		if (x % 2 === 0) {
-			return "Admin";
-		}
-		else {
-			return "Non-Admin";
-		}
-	}
-
 	var date = new Date('Sun Nov 12 2019 17:47:47 GMT-0500 (EST)');
 	var accountIdPlaceholder = date.getDay();
 	var accountString = accountIdPlaceholder.toString() + "&&" + (randomVisitor % 9).toString();
@@ -77,7 +72,7 @@ function Init(useParents) {
 
 		},
 		parentAccount: {
-			id: parentId
+			id: parentId(useParents)
 		},
 		events: {
 			ready: function printStuffReady() {
