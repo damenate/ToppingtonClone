@@ -6,19 +6,7 @@
 
 function Init(useParents) {
 
-	var parentId = function(useParents) {
-
-			if(typeof useParents == 'undefined') {
-				useParents = false;
-			}
-
-			if(useParents) {
-				return "PA_" + Math.floor(Math.random() * 1000) + 1;
-			}
-			else {
-				return null;
-			}
-	}
+	var parentId = parentId(useParents);
 
 	var screenSize = screen.width + "x" + screen.height;
 	var w = window,
@@ -94,6 +82,20 @@ function Init(useParents) {
 		}
 	};
 	return pendoVariableInitialization;
+}
+
+function parentId(useParents) {
+
+		if(typeof useParents == 'undefined') {
+			useParents = false;
+		}
+
+		if(useParents) {
+			return "PA_" + Math.floor(Math.random() * 1000) + 1;
+		}
+		else {
+			return null;
+		}
 }
 
 document.addEventListener('DOMContentLoaded', function () {
