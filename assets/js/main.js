@@ -87,10 +87,10 @@ function Init(useParents) {
 function parentId(useParents) {
 
 		if(typeof useParents == 'undefined') {
-			useParents = false;
+			return null;
 		}
 
-		if(useParents) {
+		else if(useParents) {
 			return "PA_" + Math.floor(Math.random() * 1000) + 1;
 		}
 		else {
