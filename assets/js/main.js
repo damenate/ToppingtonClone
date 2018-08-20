@@ -52,7 +52,7 @@ function Init(useParents) {
 	var pendoVariableInitialization =
 	{
 		visitor: {
-			id: randomVisitor,
+			id: randomVisitor, 
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
