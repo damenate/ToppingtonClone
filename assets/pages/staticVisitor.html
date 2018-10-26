@@ -26,7 +26,7 @@
 			y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
 			z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
-			pendo.initialize(Init());
+			pendo.initialize({ visitor: { id: 'Static_VisitorID'}, account: { id: 'Static_AccountID'}});
 
 			pendo.TOOLTIP_ARROW_SIZE = 75;
 
@@ -51,9 +51,7 @@
 							<li><a href="/#intro" class="active">Welcome</a></li>
 							<li><a href="/#first">Integrations</a></li>
 							<li><a href="/#second">Solutions</a></li>
-							<li><a id="getStarted" href="../../index.html">Reload</a></li>
-							<li><a id="getStarted" href="index2.html">Main Page Copy 2</a></li>
-							<li><a id="getStarted" href="index3.html">Main Page Copy 3</a></li>
+							<li><a id="getStarted" href="../../index.html">Home</a></li>
 						</ul>
 					</nav>
 
