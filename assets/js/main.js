@@ -53,6 +53,7 @@ function Init(useParents) {
 	{
 		visitor: {
 			id: randomVisitor, 
+			email: "spencer+devtest" + "@" + "pendo.io",
 			screen:screenSize,
 			browser:brwsr,
 			firstName: firstNameOptions[optionsSelector],
