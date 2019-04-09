@@ -19,17 +19,38 @@
 		<script src ="assets/js/jquery.scrollex.min.js" type="text/javascript"></script>
 		<script src ="assets/js/jquery.scrolly.min.js" type="text/javascript"></script>
 		<script src ="assets/js/main.js" type="text/javascript"></script>
-		<script>
-			(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-			v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+	    	<script>
+		(function(apiKey){
+		    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+		    v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
 			o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-			y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/2c315d28-6313-4a76-6ec4-b5bd95418e98/pendo.js';
+			y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
 			z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
-			pendo.initialize(Init());
+			// Call this whenever information about your visitors becomes available
+			// Please use Strings, Numbers, or Bools for value types.
+			pendo.initialize({
+			    visitor: {
+				id:              'DaMeKimIDPendoTest'   // Required if user is logged in
+				// email:        // Optional
+				// role:         // Optional
 
-			pendo.TOOLTIP_ARROW_SIZE = 75;
+				// You can add any additional visitor level key-values here,
+				// as long as it's not one of the above reserved names.
+			    },
 
+			    account: {
+				id:           'TestDMKAccountID' // Highly recommended
+				// name:         // Optional
+				// planLevel:    // Optional
+				// planPrice:    // Optional
+				// creationDate: // Optional
+
+				// You can add any additional account level key-values here,
+				// as long as it's not one of the above reserved names.
+			    }
+			});
+		})('0668310c-7648-4bb6-6fb7-d70b2808e072');
 		</script>
 
 	</head>
